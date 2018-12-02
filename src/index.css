@@ -1,0 +1,88 @@
+body {
+  background: mintcream; 
+  font-family: arial;
+  padding: 50px 100px;
+}
+
+/* FORMS */
+form {
+  display: flex;
+}
+
+input {
+  flex-grow: 1;
+  border-width: 0 0 1px 0;
+  margin: 15px 10px 15px 15px;
+  padding: 10px;
+  border-radius: 5px;
+  color: salmon;
+  border-style: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder{
+  letter-spacing: 2px;
+}
+
+input:focus{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button,
+input {
+  outline: none;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+button {
+  background-color: salmon; /* Green */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.counter {
+  display: -webkit-flex;
+  width: 200px;
+  margin: 10px;
+}
+
+.counter-action {
+  border: none;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #B0AEBA;
+  background-color: #DCDCDC;
+  display: block;
+  padding: 20px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.counter-action:hover {
+  color: #fff;
+}
+
+.increment:hover {
+  background: #83D97C;
+}
+
+.decrement:hover {
+  background: #EF5350;
+}
+
+.counter-score {
+  flex-grow: 1;
+  text-align: center;
+  font-family: monospace;
+  font-size: 2em;
+  line-height: 2em;
+}
+
